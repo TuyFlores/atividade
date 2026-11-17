@@ -1,15 +1,18 @@
-num = int(input("Digete seu Numero:"))
+nome = input("Digite seu Nome:")
+peso = float(input("Digite seu peso:"))
+altura =  float(input("Digite sua altura:"))
 
 
-if num >=9:
-    print("Valor Maximo - Perfeito")
-elif num >= 7:
-    print("Valor Medio - Bom")
-elif num >= 5:
-    print("Valor Ruim - regular")
-elif num != 11:
-    print("Valor Extra - +1")
-else num <= 4 :
-    print("Pior - Reprovado")
+imc = peso / (altura * altura)
 
+if imc <= 18.5:
+    print(f"{nome} está abaixo do peso")
 
+elif imc <= 25:
+    print(f"{nome} está no peso Normal")
+
+elif imc <= 30:
+    print(f"{nome} está sobrePeso")
+
+elif imc >= 30:
+    print(f"{nome} está obeso")
