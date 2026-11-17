@@ -1,28 +1,22 @@
 import random
+print("=== PAR OU IMPAR ===")
 
-print("=" * 35)
-print("PEDRA, PAPEL OU TESOURA")
-print("=" * 35)
+nome1 = input("Nome do jogador 1:")
+nome2 = input("Nome do jogador 2:")
+escolhas = input(f"{nome1}, você escolhe (par/impar): ") .lower ()
 
-opcoes = ["pedra", "papel", "tesoura"]
-computador = random.choice(opcoes)
+n1 = int(input(f"{nome1}, seu numero"))
+n2 = int(input(f"{nome2}, seu numero"))
 
+soma = n1 + n2
 
-jogador = input("\nEscolhas (pedra/papel/tesoura):") .lower ()
+resultado = "par" if soma % 2 == 0 else "impar"
 
-print(f"\nVocê: {jogador}")
-print(f"Computador: {computador}")
+print(f"\n{n1} + {n2} = {soma} ({resultado})")
 
-if jogador == computador:
-    print("\nEmpate!")
-elif jogador == "pedra" and computador == "tesoura" :
-    print("Você ganhou!")
-elif jogador == "papel" and computador == "pedra" :
-    print("Voce ganhau!")
-elif jogador == "tesoura" and computador == "papel" :
-    print("Você ganhou!")
-
+if escolhe == resultado :
+    print(f"{nome1} ganhou!")
 else:
-    print("\nVocê perdeu!")
+    print (f"{nome2} ganhou!")
 
 
