@@ -1,18 +1,25 @@
-nome = input("Digite seu Nome:")
-peso = float(input("Digite seu peso:"))
-altura =  float(input("Digite sua altura:"))
+print ("---Calculadora---")
+n1 = float(input("Primeiro numero"))
+n2 = float(input("Segundo numero"))
+op = input("Operação (+, -, *,/):")
 
+if op == "+":
+    print(f"Resultado: {n1 + n2}")
 
-imc = peso / (altura * altura)
+elif op == "-":
+    print(f"Resultado: {n1 - n2}")
 
-if imc <= 18.5:
-    print(f"{nome} está abaixo do peso")
+elif op == "*":
+    print(f"Resultado: {n1 * n2}")
 
-elif imc <= 25:
-    print(f"{nome} está no peso Normal")
+elif op == "/":
+    if n2 != 0:
+    print(f"Resultado: {n1 / n2:.2f}")
 
-elif imc <= 30:
-    print(f"{nome} está sobrePeso")
+else:
+    print("erro! Não pode dividir por zero!")
 
-elif imc >= 30:
-    print(f"{nome} está obeso")
+else:
+    print("Operação invalida!")
+   
+
