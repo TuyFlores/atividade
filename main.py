@@ -1,25 +1,17 @@
-print ("---Calculadora---")
-n1 = float(input("Primeiro numero"))
-n2 = float(input("Segundo numero"))
-op = input("Operação (+, -, *,/):")
+idade = int(input("Digite sua idade:"))
 
-if op == "+":
-    print(f"Resultado: {n1 + n2}")
 
-elif op == "-":
-    print(f"Resultado: {n1 - n2}")
+if idade <= 0:
+    print("Idade Invalida")
 
-elif op == "*":
-    print(f"Resultado: {n1 * n2}")
+if idade >= 12:
+    print("Criança")
 
-elif op == "/":
-    if n2 != 0:
-    print(f"Resultado: {n1 / n2:.2f}")
+if idade >= 13:
+    print("Adolecente")
 
-else:
-    print("erro! Não pode dividir por zero!")
+if idade >= 18:
+    print("Adulto")
 
-else:
-    print("Operação invalida!")
-   
-
+if idade >= 60:
+    print("Idoso")
