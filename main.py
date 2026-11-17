@@ -1,7 +1,12 @@
-idade = int(input("Digite sua idade: "))
+num = int(input("Digete sua altura:"))
 
-if idade >= 18: 
-    print("Você é de maior.")
-else :
-    print("Você é de menor.")
+
+if num == 200:
+    print(" Perfeito")
+
+elif num >= 190:
+    print(" Bom")
+    
+elif num != 185:
+    print(" Aceitavel ")
 
