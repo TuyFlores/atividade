@@ -1,12 +1,15 @@
-num = int(input("Digete sua altura:"))
+num = int(input("Digete seu Numero:"))
 
 
-if num == 200:
-    print(" Perfeito")
+if num >=9:
+    print("Valor Maximo - Perfeito")
+elif num >= 7:
+    print("Valor Medio - Bom")
+elif num >= 5:
+    print("Valor Ruim - regular")
+elif num != 11:
+    print("Valor Extra - +1")
+else num <= 4 :
+    print("Pior - Reprovado")
 
-elif num >= 190:
-    print(" Bom")
-    
-elif num != 185:
-    print(" Aceitavel ")
 
